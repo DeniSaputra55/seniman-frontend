@@ -1,5 +1,6 @@
 import {Container, Row, Col} from "react-bootstrap";
 // import HeroImage from '../assets/img/hero.png';
+import SearchPage from "../components/SearchPage";
 const HomePage = () => {
   return (
     <div className="homepage">
@@ -7,15 +8,14 @@ const HomePage = () => {
         <Container>
           <Row className="header-box d-flex align-items-center">
             <Col>
-            <h4>Senimanku 
-            </h4>
-            <h2>Hire Seniman Kreatif di <br></br><span>Indonesia</span></h2>
-            <p>Connect dengan seniman - seniman terbaik yang ada di seluruh <br></br><span>Indonesia</span>
-            </p>
-            <button className="btn btn-primary btn-lg rounded-32 me-2">Hire Seniman</button>
-            {/* <button className="btn btn-outline-danger btn-lg rounded-1 ">Lihat Desainer</button> */}
+            <h2>Cari dan Temukan <br></br><span>Pekerjaan Kreatif mu</span></h2>
+            <SearchPage>Cari</SearchPage>
+            <p>Pencarian Terpopuler </p>
             </Col>
-            
+            <button className="btn btn-primary btn-lg rounded-32 me-2">Mobile Design</button>
+            <button className="btn btn-primary btn-lg rounded-32 me-2">Logo</button>
+            <button className="btn btn-primary btn-lg rounded-32 me-2">App Design</button>
+            <button className="btn btn-primary btn-lg rounded-32 me-2">Website Design</button>
           </Row>
         </Container>
       </header>
